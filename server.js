@@ -7,7 +7,8 @@ const PORT = 3000;
 
 mongoose.connect('mongodb://localhost/onlinechat', {
     useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useFindAndModify: false
 });
 
 app.use(bodyParser.json());
